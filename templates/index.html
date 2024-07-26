@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gesture Recorder</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #recordBtn {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #recordBtn:hover {
+            background-color: #0056b3;
+        }
+        #countdown, #status, #prediction {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button id="recordBtn">Record Gesture</button>
+        <div id="countdown"></div>
+        <div id="status"></div>
+        <div id="prediction"></div>
+    </div>
+
+    <script>
+        $('#recordBtn').click(function() {
+            let counter = 3;
+            $('#countdown').text(`Recording gesture in ${counter}`);
+            const interval = setInterval(function() {
+                counter--;
+                if (counter > 0) {
+                    $('#countdown').text(`Recording gesture in ${counter}`);
+                } else {
+                    clearInterval(interval);
+                    $('#countdown').text('Recording...');
+                    $.ajax({
+                        url: '/record_gesture',
+                        type: 'POST',
+                        success: function(response) {
+                            $('#countdown').text('');
+                            $('#status').text(response.message);
+                            if (response.success) {
+                                $('#prediction').text('Predicted Gesture: ' + response.predictions.join(',')).css('color', 'darkblue');
+                            }
+                        },
+                        error: function(response) {
+                            $('#status').text('Error recording gesture: ' + response.responseText).css('color', 'darkblue');
+                        }
+                    });
+                }
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
