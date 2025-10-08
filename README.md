@@ -12,12 +12,22 @@
 The **Gesture Vocalizer** project empowers individuals with **speech and hearing impairments** by translating **hand gestures into speech or text output**.  
 By combining **flex sensors**, **accelerometers**, and **deep learning models**, this wearable system bridges the communication gap — enabling real-time gesture-to-voice translation.
 
+<p align="center">
+  <img src="templates/glove.png" alt="Hardware" width="600"/>
+  <br>
+  <em>Fig 1. Glove</em>
+</p>
 ---
 
 ## 🧠 Proposed Design
 
 The design phase focuses on translating the identified problem into a **functional, wearable prototype** that captures, processes, and vocalizes gestures.
 
+<p align="center">
+  <img src="templates/flow.png" alt="Flow" width="600"/>
+  <br>
+  <em>Fig 2. Proposed Flow</em>
+</p>
 ---
 
 ### 🧩 Hardware Design
@@ -41,12 +51,6 @@ The design phase focuses on translating the identified problem into a **function
 3. **Power Supply:** Powered through USB to ensure stable operation.  
 4. **Encapsulation:** Mounted on a glove to maintain sensor stability and comfort.
 
-<p align="center">
-  <img src="src/assets/hardware-design.png" alt="Hardware Design" width="600"/>
-  <br>
-  <em>Fig 1. Proposed Hardware Design</em>
-</p>
-
 ---
 
 ## 💻 Software Design
@@ -66,11 +70,22 @@ The design phase focuses on translating the identified problem into a **function
 - Enables recording of new gesture data and live model inference.
 
 <p align="center">
-  <img src="src/assets/ui.png" alt="User Interface" width="600"/>
+  <img src="templates/ui1.png" alt="User Interface" width="600"/>
+  <br>
+  <em>Fig 3. User Interface</em>
+</p>
+
+<p align="center">
+  <img src="templates/ui2.png" alt="User Interface" width="600"/>
   <br>
   <em>Fig 4. User Interface</em>
 </p>
 
+<p align="center">
+  <img src="templates/ui3.png" alt="User Interface" width="600"/>
+  <br>
+  <em>Fig 5. User Interface</em>
+</p>
 ---
 
 ## ⚙️ Implementation
@@ -116,7 +131,6 @@ void loop() {
   delay(100);
 }
 ```
-<p align="center"> <img src="src/assets/implementation.png" alt="Implementation Diagram" width="600"/> <br> <em>Fig 2. Implementation Flow</em> </p>
 ## 🧾 Results and Readings
 | Gesture   | Flex1 | Flex2 | Flex3 | Flex4 | Flex5 | Ax  | Ay | Az | Predicted Output |
 | --------- | ----- | ----- | ----- | ----- | ----- | --- | -- | -- | ---------------- |
@@ -124,7 +138,7 @@ void loop() {
 | Thank You | 604   | 591   | 576   | 569   | 540   | 120 | 90 | 80 | Thank You        |
 | Help      | 620   | 580   | 570   | 562   | 530   | 118 | 86 | 78 | Help             |
 
-<p align="center"> <img src="src/assets/readings.png" alt="Sensor Readings" width="600"/> <br> <em>Fig 3. Experimental Readings</em> </p>
+<p align="center"> <img src="templates/readings.png" alt="Sensor Readings" width="600"/> <br> <em>Fig 3. Experimental Readings</em> </p>
 
 ## 🛠️ Tech Stack
 | Category               | Technologies                         |
