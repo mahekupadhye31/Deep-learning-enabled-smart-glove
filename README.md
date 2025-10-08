@@ -178,8 +178,7 @@ Perform gestures wearing the glove — recognized gestures will appear in the UI
 ## 📊 Performance Summary
 | Metric                           | Value                                     |
 | -------------------------------- | ----------------------------------------- |
-| **Flex Sensor Accuracy**         | 95.3%                                     |
-| **Gesture Recognition Accuracy** | 93.7%                                     |
+| **Model accuracy**               | 84.59%                                       |
 | **Detection Latency**            | < 0.5 seconds                             |
 | **Dataset Scale**                | 3-second windows × 5 sensors × N gestures |
 
