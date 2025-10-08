@@ -5,7 +5,7 @@
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-LSTM-orange?logo=tensorflow&logoColor=white)](https://www.tensorflow.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
----
+
 
 ## 📘 Overview
 
@@ -17,7 +17,7 @@ By combining **flex sensors**, **accelerometers**, and **deep learning models**,
   <br>
   <em>Fig 1. Glove</em>
 </p>
----
+
 
 ## 🧠 Proposed Design
 
@@ -28,7 +28,7 @@ The design phase focuses on translating the identified problem into a **function
   <br>
   <em>Fig 2. Proposed Flow</em>
 </p>
----
+
 
 ### 🧩 Hardware Design
 
@@ -51,7 +51,7 @@ The design phase focuses on translating the identified problem into a **function
 3. **Power Supply:** Powered through USB to ensure stable operation.  
 4. **Encapsulation:** Mounted on a glove to maintain sensor stability and comfort.
 
----
+
 
 ## 💻 Software Design
 
@@ -86,7 +86,6 @@ The design phase focuses on translating the identified problem into a **function
   <br>
   <em>Fig 5. User Interface</em>
 </p>
----
 
 ## ⚙️ Implementation
 
@@ -138,7 +137,12 @@ void loop() {
 | Thank You | 604   | 591   | 576   | 569   | 540   | 120 | 90 | 80 | Thank You        |
 | Help      | 620   | 580   | 570   | 562   | 530   | 118 | 86 | 78 | Help             |
 
-<p align="center"> <img src="templates/readings.png" alt="Sensor Readings" width="600"/> <br> <em>Fig 3. Experimental Readings</em> </p>
+## Model Performance Comparison Across Algorithms
+<p align="center">
+  <img src="templates/comparison.png" alt="comparison" width="600"/>
+  <br>
+  <em>Fig 5. User Interface</em>
+</p>
 
 ## 🛠️ Tech Stack
 | Category               | Technologies                         |
@@ -179,3 +183,9 @@ Perform gestures wearing the glove — recognized gestures will appear in the UI
 | **Gesture Recognition Accuracy** | 93.7%                                     |
 | **Detection Latency**            | < 0.5 seconds                             |
 | **Dataset Scale**                | 3-second windows × 5 sensors × N gestures |
+
+## 🤝 Contributors
+- [Mahek Upadhye](https://github.com/mahekupadhye31)
+- [Aasmi Thadhani](https://github.com/aasmithadhani)
+- [Urav Dalal](https://github.com/Urav-Dalal)
+- [Shreya Shah]
