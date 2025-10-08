@@ -141,7 +141,7 @@ void loop() {
 <p align="center">
   <img src="templates/comparison.png" alt="comparison" width="600"/>
   <br>
-  <em>Fig 5. User Interface</em>
+  <em>Fig 6. Model Performance Comparison Across Algorithms </em>
 </p>
 
 ## 🛠️ Tech Stack
@@ -188,4 +188,4 @@ Perform gestures wearing the glove — recognized gestures will appear in the UI
 - [Mahek Upadhye](https://github.com/mahekupadhye31)
 - [Aasmi Thadhani](https://github.com/aasmithadhani)
 - [Urav Dalal](https://github.com/Urav-Dalal)
-- [Shreya Shah]
+- Shreya Shah
