@@ -115,3 +115,53 @@ void loop() {
   Serial.println();
   delay(100);
 }
+```
+<p align="center"> <img src="src/assets/implementation.png" alt="Implementation Diagram" width="600"/> <br> <em>Fig 2. Implementation Flow</em> </p>
+## 🧾 Results and Readings
+| Gesture   | Flex1 | Flex2 | Flex3 | Flex4 | Flex5 | Ax  | Ay | Az | Predicted Output |
+| --------- | ----- | ----- | ----- | ----- | ----- | --- | -- | -- | ---------------- |
+| Hello     | 612   | 589   | 578   | 560   | 533   | 112 | 85 | 75 | Hello            |
+| Thank You | 604   | 591   | 576   | 569   | 540   | 120 | 90 | 80 | Thank You        |
+| Help      | 620   | 580   | 570   | 562   | 530   | 118 | 86 | 78 | Help             |
+
+<p align="center"> <img src="src/assets/readings.png" alt="Sensor Readings" width="600"/> <br> <em>Fig 3. Experimental Readings</em> </p>
+
+## 🛠️ Tech Stack
+| Category               | Technologies                         |
+| ---------------------- | ------------------------------------ |
+| **Hardware**           | Arduino Mega, Flex Sensors, MPU-6050 |
+| **Programming**        | Python, C++                          |
+| **Machine Learning**   | TensorFlow, LSTM                     |
+| **Data Handling**      | Pandas, NumPy                        |
+| **UI / Visualization** | Tkinter / Streamlit                  |
+
+## ⚡ Installation & Setup
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/username/gesture-vocalizer.git
+cd gesture-vocalizer
+```
+### 2. Install Python Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Upload Arduino Script
+Use the Arduino IDE to upload the .ino file to your Arduino Mega board.
+
+### 4. Run the Application
+``` bash
+python app.py
+
+```
+### 5. Interact
+Perform gestures wearing the glove — recognized gestures will appear in the UI and be vocalized.
+
+## 📊 Performance Summary
+| Metric                           | Value                                     |
+| -------------------------------- | ----------------------------------------- |
+| **Flex Sensor Accuracy**         | 95.3%                                     |
+| **Gesture Recognition Accuracy** | 93.7%                                     |
+| **Detection Latency**            | < 0.5 seconds                             |
+| **Dataset Scale**                | 3-second windows × 5 sensors × N gestures |
