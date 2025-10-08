@@ -182,6 +182,11 @@ Perform gestures wearing the glove — recognized gestures will appear in the UI
 | **Detection Latency**            | < 0.5 seconds                             |
 | **Dataset Scale**                | 3-second windows × 5 sensors × N gestures |
 
+## 🏆 Achievements
+- Our research was **published** in the *Journal of Electrical Systems*, Vol. 20, No. 10s (2024).  
+- We obtained a **copyright** for our novel dataset.
+
+
 ## 🤝 Contributors
 - [Mahek Upadhye](https://github.com/mahekupadhye31)
 - [Aasmi Thadhani](https://github.com/aasmithadhani)
