@@ -141,7 +141,6 @@ void loop() {
 <p align="center">
   <img src="templates/comparison.png" alt="comparison" width="600"/>
   <br>
-  <em>Fig 6. Model Performance Comparison Across Algorithms </em>
 </p>
 
 ## 🛠️ Tech Stack
@@ -151,7 +150,7 @@ void loop() {
 | **Programming**        | Python, C++                          |
 | **Machine Learning**   | TensorFlow, LSTM                     |
 | **Data Handling**      | Pandas, NumPy                        |
-| **UI / Visualization** | Tkinter / Streamlit                  |
+| **UI / Visualization** | HTML/CSS                             |
 
 ## ⚡ Installation & Setup
 
